@@ -121,40 +121,19 @@ body {
 }
 
 .main-bg > header,
-.main-bg > main > section:not(#trabalhos):not(#success), 
+.main-bg > main > section, 
 .main-bg > footer {
     position: relative;
     z-index: 2;
 }
 
 .main-bg h1, .main-bg h2, .main-bg h3, .main-bg p, .main-bg span, .main-bg a, .main-bg label,
-.main-bg .text-foreground, .main-bg .text-foreground\/80, .main-bg .text-muted-foreground {
+.main-bg .text-foreground, .main-bg .text-foreground\/80, .main-bg .text-muted-foreground,
+#trabalhos .text-secondary-foreground, #success .text-secondary-foreground,
+#trabalhos .text-muted-foreground, #success .text-muted-foreground {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
     color: white !important;
 }
-
-#trabalhos h2, #trabalhos p, #trabalhos .text-foreground\/80,
-#success h2, #success p, #success .text-foreground\/80 {
-  color: hsl(var(--foreground)) !important;
-  text-shadow: none !important;
-}
-
-#trabalhos .text-primary,
-#success .text-primary {
-  color: hsl(var(--primary)) !important;
-}
-
-#trabalhos .text-secondary-foreground,
-#success .text-secondary-foreground {
-  color: hsl(var(--secondary-foreground)) !important;
-  text-shadow: none !important;
-}
-
-#success .text-muted-foreground, #trabalhos .text-muted-foreground {
-  color: hsl(var(--muted-foreground)) !important;
-  text-shadow: none !important;
-}
-
 
 .main-bg a {
     color: hsl(var(--primary)) !important;
@@ -164,6 +143,22 @@ body {
     color: hsl(var(--accent)) !important;
 }
 
-.main-bg .text-primary {
+.main-bg .text-primary,
+#trabalhos .text-primary,
+#success .text-primary {
   color: hsl(var(--primary)) !important;
+}
+
+#trabalhos .card, #success .card {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+}
+#trabalhos .bg-secondary {
+    background-color: transparent !important;
+}
+
+#trabalhos h2, #trabalhos p,
+#success h2, #success p {
+    color: white !important;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7) !important;
 }

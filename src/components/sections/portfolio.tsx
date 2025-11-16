@@ -45,7 +45,7 @@ export default function PortfolioSection() {
   const isVisible = useOnScreen(sectionRef);
 
   return (
-    <section id="trabalhos" className="py-24 sm:py-32 bg-background text-foreground overflow-x-hidden">
+    <section id="trabalhos" className="py-24 sm:py-32 text-foreground overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">

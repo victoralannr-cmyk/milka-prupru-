@@ -7,7 +7,7 @@ export default function SuccessSection() {
   const loanImage = PlaceHolderImages.find(img => img.id === 'loan-success');
 
   return (
-    <section id="success" className="py-24 sm:py-32 bg-background text-foreground">
+    <section id="success" className="py-24 sm:py-32 text-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">

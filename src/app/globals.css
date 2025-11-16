@@ -20,7 +20,7 @@ body {
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 51 100% 50%;
+    --accent: 36 100% 50%;
     --accent-foreground: 240 5% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -55,7 +55,7 @@ body {
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 51 100% 50%;
+    --accent: 36 100% 50%;
     --accent-foreground: 240 5% 11%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -114,30 +114,18 @@ body {
     z-index: 2;
 }
 
-.main-bg h1, .main-bg h2, .main-bg h3, .main-bg p, .main-bg span, .main-bg a, .main-bg label {
+.main-bg h1, .main-bg h2, .main-bg h3, .main-bg p, .main-bg span, .main-bg a, .main-bg label,
+.main-bg .text-foreground, .main-bg .text-foreground\/80, .main-bg .text-muted-foreground {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-}
-
-.main-bg h1, .main-bg h2, .main-bg h3, .main-bg footer p, .main-bg p:not(.text-muted-foreground), .main-bg label,
-.main-bg .text-foreground {
     color: white !important;
 }
 
-.main-bg .text-foreground\/80 {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.main-bg .text-muted-foreground {
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-
-
 .main-bg a {
-    color: hsl(var(--primary));
+    color: hsl(var(--primary)) !important;
 }
 
 .main-bg a:hover {
-    color: hsl(var(--accent));
+    color: hsl(var(--accent)) !important;
 }
 
 .main-bg .text-primary {

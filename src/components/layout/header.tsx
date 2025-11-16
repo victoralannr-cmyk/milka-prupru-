@@ -23,7 +23,7 @@ export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full border-b border-white/20">
+    <header className="w-full border-b border-white/20 relative z-10">
       <div className="container flex h-20 items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
           {navItems.slice(0, 2).map((item) => (
@@ -102,3 +102,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

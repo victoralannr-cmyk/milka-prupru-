@@ -33,7 +33,7 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-white">Sonho do Carro Novo</h3>
+                <h3 className="font-headline text-xl font-semibold text-primary">Sonho do Carro Novo</h3>
                 <p className="mt-2 text-white/80">Facilitamos o financiamento para que você possa dirigir o carro que sempre quis.</p>
               </div>
             </CardContent>
@@ -53,7 +53,7 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-white">Crédito com Confiança</h3>
+                <h3 className="font-headline text-xl font-semibold text-primary">Crédito com Confiança</h3>
                 <p className="mt-2 text-white/80">Construímos uma relação de confiança para oferecer o empréstimo que você precisa.</p>
               </div>
             </CardContent>

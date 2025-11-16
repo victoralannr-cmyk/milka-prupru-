@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "car-success",
+      "description": "Happy person with new car keys",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NjMxODMxMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "loan-success",
+      "description": "People shaking hands over a contract",
+      "imageUrl": "https://images.unsplash.com/photo-1681505540305-03c58827b902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYW5kc2hha2UlMjBjb250cmFjdHxlbnwwfHx8fDE3NjMyNjA5OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handshake contract"
+    }
+  ]
 }

@@ -9,7 +9,7 @@ export default function Footer() {
           <h3 className="text-2xl font-headline font-semibold text-center text-white mb-6">Nossa Localização</h3>
           <div className="aspect-video w-full overflow-hidden rounded-lg border mb-8 shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.189499839423!2d-46.65882298502263!3d-23.56138998468263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886543210!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.248351508434!2d-40.67953232589334!3d-5.184022952402972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7940170a41f6f19%3A0x6c6e737038e21703!2sR.%20Dr.%20J%C3%BAlio%20Lima%2C%20936%20-%20Fatima%20II%2C%20Crate%C3%BAs%20-%20CE%2C%2063700-133!5e0!3m2!1spt-BR!2sbr!4v1717178051646!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

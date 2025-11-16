@@ -108,7 +108,7 @@ body {
 }
 
 .main-bg > header,
-.main-bg > main > section:not(#trabalhos), 
+.main-bg > main > section:not(#trabalhos):not(#success), 
 .main-bg > footer {
     position: relative;
     z-index: 2;
@@ -120,17 +120,25 @@ body {
     color: white !important;
 }
 
-#trabalhos h2, #trabalhos p, #trabalhos .text-foreground\/80 {
+#trabalhos h2, #trabalhos p, #trabalhos .text-foreground\/80,
+#success h2, #success p, #success .text-foreground\/80 {
   color: hsl(var(--foreground)) !important;
   text-shadow: none !important;
 }
 
-#trabalhos .text-primary {
+#trabalhos .text-primary,
+#success .text-primary {
   color: hsl(var(--primary)) !important;
 }
 
-#trabalhos .text-secondary-foreground {
+#trabalhos .text-secondary-foreground,
+#success .text-secondary-foreground {
   color: hsl(var(--secondary-foreground)) !important;
+  text-shadow: none !important;
+}
+
+#success .text-muted-foreground, #trabalhos .text-muted-foreground {
+  color: hsl(var(--muted-foreground)) !important;
   text-shadow: none !important;
 }
 

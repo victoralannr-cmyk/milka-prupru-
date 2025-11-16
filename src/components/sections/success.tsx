@@ -7,7 +7,7 @@ export default function SuccessSection() {
   const loanImage = PlaceHolderImages.find(img => img.id === 'loan-success');
 
   return (
-    <section id="success" className="py-24 sm:py-32 bg-background">
+    <section id="success" className="py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -18,10 +18,10 @@ export default function SuccessSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="overflow-hidden group">
+          <Card className="overflow-hidden group bg-card/80 backdrop-blur-sm">
             <CardContent className="p-0">
               {carImage && (
-                <div className="overflow-hidden">
+                <div className="overflow-hidden rounded-t-lg">
                 <Image
                   src={carImage.imageUrl}
                   alt={carImage.description}
@@ -33,15 +33,15 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-foreground">Sonho do Carro Novo</h3>
-                <p className="mt-2 text-foreground/80">Facilitamos o financiamento para que você possa dirigir o carro que sempre quis.</p>
+                <h3 className="font-headline text-xl font-semibold text-white">Sonho do Carro Novo</h3>
+                <p className="mt-2 text-white/80">Facilitamos o financiamento para que você possa dirigir o carro que sempre quis.</p>
               </div>
             </CardContent>
           </Card>
-          <Card className="overflow-hidden group">
+          <Card className="overflow-hidden group bg-card/80 backdrop-blur-sm">
             <CardContent className="p-0">
               {loanImage && (
-                <div className="overflow-hidden">
+                <div className="overflow-hidden rounded-t-lg">
                 <Image
                   src={loanImage.imageUrl}
                   alt={loanImage.description}
@@ -53,8 +53,8 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-foreground">Crédito com Confiança</h3>
-                <p className="mt-2 text-foreground/80">Construímos uma relação de confiança para oferecer o empréstimo que você precisa.</p>
+                <h3 className="font-headline text-xl font-semibold text-white">Crédito com Confiança</h3>
+                <p className="mt-2 text-white/80">Construímos uma relação de confiança para oferecer o empréstimo que você precisa.</p>
               </div>
             </CardContent>
           </Card>

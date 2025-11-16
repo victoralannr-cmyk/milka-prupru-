@@ -31,6 +31,9 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <Link href="#footer-contato" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+            Contato
+          </Link>
         </nav>
 
         <div className="absolute left-1/2 top-0 -translate-x-1/2 z-10 flex justify-center items-center">
@@ -47,15 +50,6 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <nav className="hidden md:flex items-center gap-6 mr-4">
-            {navItems.slice(2).map((item) => (
-                <Button key={item.label} asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href={item.href}>
-                        {item.label}
-                    </Link>
-                </Button>
-            ))}
-          </nav>
            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />

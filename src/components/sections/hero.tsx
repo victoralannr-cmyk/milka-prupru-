@@ -20,7 +20,7 @@ export default function HeroSection() {
         </p>
         <div className="mt-10">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all duration-300 transform hover:scale-105">
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
               Clique aqui
             </a>

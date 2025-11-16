@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Briefcase, Home, Mail } from 'lucide-react';
+import { Menu, X, Briefcase, Home } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Image from 'next/image';
 
@@ -16,7 +16,6 @@ const WhatsAppIcon = () => (
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
   { label: 'Trabalhos', href: '#trabalhos', icon: Briefcase },
-  { label: 'Contato', href: '#footer-contato', icon: Mail },
 ];
 
 export default function Header() {
@@ -26,14 +25,11 @@ export default function Header() {
     <header className="w-full border-b border-white/20 relative z-10 h-32 mb-16">
       <div className="container flex h-full items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
-          {navItems.slice(0, 2).map((item) => (
+          {navItems.map((item) => (
             <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
               {item.label}
             </Link>
           ))}
-          <Link href="#footer-contato" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
-            Contato
-          </Link>
         </nav>
 
         <div className="absolute left-1/2 top-0 -translate-x-1/2 z-10 flex justify-center items-center">
@@ -51,7 +47,7 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
-             <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+             <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
               Vamos lá!
             </a>
@@ -84,7 +80,7 @@ export default function Header() {
                   </nav>
                   <div className="p-4 mt-auto border-t">
                      <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
                           <WhatsAppIcon />
                           Vamos lá!
                         </a>

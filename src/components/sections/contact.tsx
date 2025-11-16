@@ -61,7 +61,7 @@ Email: ${values.email}
 ${values.message ? `Mensagem: ${values.message}` : ''}
 Gostaria de ser contatado(a)!`;
 
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(text.trim())}`;
+    const whatsappUrl = `https://wa.me/5588994532323?text=${encodeURIComponent(text.trim())}`;
     
     window.open(whatsappUrl, '_blank');
 

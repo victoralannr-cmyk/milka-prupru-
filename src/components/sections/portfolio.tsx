@@ -60,10 +60,10 @@ export default function PortfolioSection() {
             <Card
               key={index}
               className={cn(
-                'bg-secondary text-secondary-foreground transform transition-all duration-700 ease-out w-[250px] h-[72px]',
+                'bg-secondary text-secondary-foreground transform transition-all duration-1000 ease-out w-[250px] h-[72px]',
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
               )}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 200}ms` }}
             >
               <CardContent className="flex h-full items-center justify-center p-6">
                 <span className="text-lg font-semibold">{item.title}</span>

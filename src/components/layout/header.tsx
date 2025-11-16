@@ -41,7 +41,7 @@ export default function Header() {
                 width={280}
                 height={300}
                 priority
-                style={{ filter: 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2))' }}
+                style={{ filter: 'drop-shadow(0 0 5px rgba(0, 0, 0, 0.8))' }}
               />
             </Link>
         </div>

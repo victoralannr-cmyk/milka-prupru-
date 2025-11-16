@@ -38,10 +38,10 @@ export default function Header() {
               <Image
                 src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
                 alt="CrediSoluções Logo"
-                width={280}
-                height={300}
+                width={320}
+                height={420}
                 priority
-                style={{ filter: 'drop-shadow(0 0 5px rgba(0, 0, 0, 0.8))' }}
+                style={{ filter: 'drop-shadow(0 0 8px rgba(0, 0, 0, 0.9))' }}
               />
             </Link>
         </div>

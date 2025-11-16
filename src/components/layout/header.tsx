@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-28 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
           {navItems.slice(0, 2).map((item) => (
             <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
@@ -27,7 +27,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div className="absolute left-1/2 top-2 -translate-x-1/2 z-10">
           <Link href="#home">
             <Image
               src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
@@ -35,6 +35,7 @@ export default function Header() {
               width={210}
               height={109.38}
               priority
+              style={{ filter: 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))' }}
             />
           </Link>
         </div>

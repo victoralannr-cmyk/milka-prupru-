@@ -23,11 +23,11 @@ export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b border-white/20">
       <div className="container flex h-20 items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
           {navItems.slice(0, 2).map((item) => (
-            <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
+            <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
               {item.label}
             </Link>
           ))}
@@ -49,7 +49,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <nav className="hidden md:flex items-center gap-6 mr-4">
             {navItems.slice(2).map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
+              <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
                 {item.label}
               </Link>
             ))}
@@ -62,7 +62,7 @@ export default function Header() {
            </Button>
            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
              <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="md:hidden">
+                <Button variant="outline" size="icon" className="md:hidden bg-transparent text-white hover:bg-white/10 hover:text-white">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Abrir menu</span>
                 </Button>

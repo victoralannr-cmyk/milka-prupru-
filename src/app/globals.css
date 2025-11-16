@@ -107,7 +107,9 @@ body {
     z-index: -1;
 }
 
-.main-bg > main > section, .main-bg > footer {
+.main-bg > header,
+.main-bg > main > section, 
+.main-bg > footer {
     position: relative;
     z-index: 2;
 }
@@ -116,13 +118,19 @@ body {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-.main-bg h1, .main-bg h2, .main-bg h3, .main-bg footer p, .main-bg p:not(.text-muted-foreground):not(.text-foreground\/80), .main-bg label {
-    color: white;
+.main-bg h1, .main-bg h2, .main-bg h3, .main-bg footer p, .main-bg p:not(.text-muted-foreground), .main-bg label,
+.main-bg .text-foreground {
+    color: white !important;
 }
 
 .main-bg .text-foreground\/80 {
     color: rgba(255, 255, 255, 0.9) !important;
 }
+
+.main-bg .text-muted-foreground {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
 
 .main-bg a {
     color: hsl(var(--primary));
@@ -133,5 +141,5 @@ body {
 }
 
 .main-bg .text-primary {
-  color: hsl(var(--primary));
+  color: hsl(var(--primary)) !important;
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Briefcase, Home, Mail } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Image from 'next/image';
 
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
@@ -17,20 +18,35 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="#home" className="flex items-center gap-2">
-          <span className="text-xl font-bold font-headline text-primary">CrediSoluções</span>
-        </Link>
-
+      <div className="container flex h-28 items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
-          {navItems.map((item) => (
+          {navItems.slice(0, 2).map((item) => (
             <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
               {item.label}
             </Link>
           ))}
         </nav>
 
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <Link href="#home">
+            <Image
+              src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
+              alt="CrediSoluções Logo"
+              width={210}
+              height={109.38}
+              priority
+            />
+          </Link>
+        </div>
+
         <div className="flex items-center gap-2">
+          <nav className="hidden md:flex items-center gap-6 mr-4">
+            {navItems.slice(2).map((item) => (
+              <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
+                {item.label}
+              </Link>
+            ))}
+          </nav>
            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
            </Button>

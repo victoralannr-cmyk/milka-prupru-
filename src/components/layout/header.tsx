@@ -34,18 +34,16 @@ export default function Header() {
         </nav>
 
         <div className="absolute left-1/2 top-2 -translate-x-1/2 z-10 flex justify-center items-center">
-          <div className="bg-background/80 backdrop-blur-sm rounded-full p-2" style={{ width: '150px', height: '150px' }}>
             <Link href="#home">
               <Image
                 src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
                 alt="CrediSoluções Logo"
-                width={250}
-                height={130}
+                width={150}
+                height={150}
                 priority
-                style={{ filter: 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))', marginTop: '5px' }}
+                style={{ filter: 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2))' }}
               />
             </Link>
-          </div>
         </div>
 
         <div className="flex items-center gap-2">

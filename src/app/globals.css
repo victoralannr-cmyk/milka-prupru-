@@ -87,50 +87,51 @@ body {
   }
 }
 
-.section-bg {
+.main-bg {
     background-image: url('https://i.postimg.cc/G3XTpTmh/Gemini-Generated-Image-tagfcctagfcctagf.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.section-bg::before {
+.main-bg::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1;
+    z-index: -1;
 }
 
-.section-bg > * {
+.main-bg > main > section, .main-bg > footer {
     position: relative;
     z-index: 2;
 }
 
-.section-bg h1, .section-bg h2, .section-bg h3, .section-bg p, .section-bg span, .section-bg a, .section-bg label {
+.main-bg h1, .main-bg h2, .main-bg h3, .main-bg p, .main-bg span, .main-bg a, .main-bg label {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-.section-bg h1, .section-bg h2, .section-bg h3, .section-bg p:not(.text-muted-foreground), .section-bg label {
+.main-bg h1, .main-bg h2, .main-bg h3, .main-bg footer p, .main-bg p:not(.text-muted-foreground):not(.text-foreground\/80), .main-bg label {
     color: white;
 }
 
-.section-bg a {
+.main-bg .text-foreground\/80 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.main-bg a {
     color: hsl(var(--primary));
 }
 
-.section-bg a:hover {
+.main-bg a:hover {
     color: hsl(var(--accent));
 }
 
-.section-bg .text-foreground\/80 {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.section-bg .text-primary {
+.main-bg .text-primary {
   color: hsl(var(--primary));
 }

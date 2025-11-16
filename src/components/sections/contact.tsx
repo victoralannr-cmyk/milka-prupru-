@@ -74,7 +74,7 @@ Gostaria de ser contatado(a)!`;
   }
 
   return (
-    <section id="contato" className="py-24 sm:py-32 section-bg">
+    <section id="contato" className="py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">

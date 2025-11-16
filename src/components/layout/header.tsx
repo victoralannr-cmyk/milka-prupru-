@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="w-full border-b border-white/20 relative z-10 h-32 mb-16">
       <div className="container flex h-full items-center justify-between">
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6 w-1/3">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
               {item.label}
@@ -32,26 +32,21 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 z-10 flex justify-center items-center">
+        <div className="w-1/3 flex justify-center items-center h-full">
             <Link href="#home">
               <Image
                 src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
                 alt="CrediSoluções Logo"
-                width={320}
-                height={420}
+                width={200}
+                height={200}
                 priority
+                className="object-contain h-48 w-auto"
                 style={{ filter: 'drop-shadow(0 0 8px rgba(0, 0, 0, 0.9))' }}
               />
             </Link>
         </div>
 
-        <div className="flex items-center gap-2">
-           <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
-             <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
-              <WhatsAppIcon />
-              Vamos lá!
-            </a>
-           </Button>
+        <div className="flex items-center gap-2 w-1/3 justify-end">
            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
              <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden bg-transparent text-white hover:bg-white/10 hover:text-white">

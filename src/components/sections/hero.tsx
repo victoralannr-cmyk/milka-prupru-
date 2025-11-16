@@ -8,9 +8,9 @@ const WhatsAppIcon = () => (
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative bg-primary/5 py-24 sm:py-32 md:py-40">
+    <section id="home" className="relative section-bg py-24 sm:py-32 md:py-40">
       <div className="container text-center">
-        <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="font-headline text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Seu Sonho Não Espera.
           <br />
           Seu Crédito Está Aqui!

@@ -74,7 +74,7 @@ Gostaria de ser contatado(a)!`;
   }
 
   return (
-    <section id="contato" className="py-24 sm:py-32 bg-background">
+    <section id="contato" className="py-24 sm:py-32 section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -94,7 +94,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Nome Completo</FormLabel>
                     <FormControl>
-                      <Input placeholder="Seu nome" {...field} />
+                      <Input placeholder="Seu nome" {...field} className="bg-white/80 text-black" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -107,7 +107,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Celular</FormLabel>
                     <FormControl>
-                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} />
+                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} className="bg-white/80 text-black" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -120,7 +120,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="seu@email.com" {...field} />
+                      <Input type="email" placeholder="seu@email.com" {...field} className="bg-white/80 text-black" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -133,7 +133,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Mensagem Adicional (Opcional)</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} />
+                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} className="bg-white/80 text-black" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

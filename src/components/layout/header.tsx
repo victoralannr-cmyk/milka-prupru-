@@ -16,7 +16,7 @@ const WhatsAppIcon = () => (
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
   { label: 'Trabalhos', href: '#trabalhos', icon: Briefcase },
-  { label: 'Contato', href: '#contato', icon: Mail },
+  { label: 'Contato', href: '#footer-contato', icon: Mail },
 ];
 
 export default function Header() {
@@ -49,9 +49,11 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <nav className="hidden md:flex items-center gap-6 mr-4">
             {navItems.slice(2).map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
-                {item.label}
-              </Link>
+                <Button key={item.label} asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Link href={item.href}>
+                        {item.label}
+                    </Link>
+                </Button>
             ))}
           </nav>
            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">

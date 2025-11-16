@@ -61,7 +61,7 @@ export default function PortfolioSection() {
               key={index}
               className={cn(
                 'bg-secondary text-secondary-foreground transform transition-all duration-1000 ease-out w-[250px] h-[72px]',
-                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
+                isVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-full -rotate-12'
               )}
               style={{ transitionDelay: `${index * 200}ms` }}
             >

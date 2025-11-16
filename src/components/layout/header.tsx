@@ -38,8 +38,8 @@ export default function Header() {
               <Image
                 src="https://i.postimg.cc/8zD2ncLG/Gemini-Generated-Image-7n27217n27217n27-removebg-preview.png"
                 alt="CrediSoluções Logo"
-                width={150}
-                height={150}
+                width={280}
+                height={300}
                 priority
                 style={{ filter: 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2))' }}
               />
@@ -102,5 +102,3 @@ export default function Header() {
     </header>
   );
 }
-
-    

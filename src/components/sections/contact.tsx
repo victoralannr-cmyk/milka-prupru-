@@ -141,7 +141,7 @@ Gostaria de ser contatado(a)!`;
               />
               <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                 <WhatsAppIcon />
-                CONTATE-NOS
+                Tire suas dúvidas
               </Button>
             </form>
           </Form>

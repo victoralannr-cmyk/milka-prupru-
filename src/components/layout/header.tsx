@@ -23,7 +23,7 @@ export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative w-full border-b">
+    <header className="w-full border-b">
       <div className="container flex h-20 items-center justify-between">
         <nav className="hidden md:flex items-center gap-6">
           {navItems.slice(0, 2).map((item) => (
@@ -57,7 +57,7 @@ export default function Header() {
            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
-              CONTATE-NOS
+              Vamos lá!
             </a>
            </Button>
            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
@@ -90,7 +90,7 @@ export default function Header() {
                      <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                         <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
                           <WhatsAppIcon />
-                          CONTATE-NOS
+                          Vamos lá!
                         </a>
                      </Button>
                   </div>

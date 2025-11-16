@@ -55,17 +55,17 @@ export default function PortfolioSection() {
             Confira alguns dos casos de sucesso que demonstram nosso compromisso e eficácia.
           </p>
         </div>
-        <div ref={sectionRef} className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div ref={sectionRef} className="flex flex-col items-center gap-4">
           {portfolioItems.map((item, index) => (
             <Card
               key={index}
               className={cn(
-                'bg-secondary text-secondary-foreground transform transition-all duration-700 ease-out',
-                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+                'bg-secondary text-secondary-foreground transform transition-all duration-700 ease-out w-[250px] h-[72px]',
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <CardContent className="flex aspect-square items-center justify-center p-6">
+              <CardContent className="flex h-full items-center justify-center p-6">
                 <span className="text-lg font-semibold">{item.title}</span>
               </CardContent>
             </Card>

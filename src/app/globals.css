@@ -120,7 +120,7 @@ body {
     color: white !important;
 }
 
-#trabalhos h2, #trabalhos p {
+#trabalhos h2, #trabalhos p, #trabalhos .text-foreground\/80 {
   color: hsl(var(--foreground)) !important;
   text-shadow: none !important;
 }

@@ -63,7 +63,7 @@ export default function PortfolioSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-            Nossos Resultados
+            Nossos serviços
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg leading-8 text-foreground/80">
             Confira alguns dos casos de sucesso que demonstram nosso compromisso e eficácia.

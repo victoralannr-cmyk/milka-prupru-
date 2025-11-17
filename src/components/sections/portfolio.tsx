@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { PiggyBank, HandCoins } from 'lucide-react';
+import { PiggyBank, HandCoins, Car, Landmark } from 'lucide-react';
 
 const Wheelchair = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#4169E1" {...props}><path d="M482.08-734q-30.08 0-51.58-21.42t-21.5-51.5q0-30.08 21.42-51.58t-51.5-21.5q30.08 0 51.58 21.42t21.5 51.5q0 30.08-21.42 51.58t-51.5 21.5ZM696-80v-209H482q-29.7 0-50.85-21.15Q410-331.3 410-361v-247q0-29.7 21-50.85Q452-680 482.49-680q22.17 0 38.34 9T559-636q42 49 92 82t109 35v60q-51 0-105-25t-104-67v183h133q29.7 0 50.85 21.15Q756-325.7 756-296v216h-60Zm-300 0q-83 0-139.5-56.5T200-276q0-68 49.5-125.5T380-468v61q-54 5-86.5 44.5T261-276q0 58 38.5 97t96.5 39q47 0 87-32.5t44-86.5h61q-8 80-66 129.5T396-80Z"></path></svg>
@@ -22,8 +22,8 @@ const portfolioItems = [
     description: "BPC/LOAS é um benefício do governo que garante um salário mínimo mensal para idosos acima de 65 anos ou pessoas com deficiência que vivem em situação de vulnerabilidade e não têm condições de se manter. Não exige contribuição ao INSS e é fundamental para garantir dignidade a quem mais precisa.\n\nNós cuidamos de todo o processo com excelência, garantindo o melhor trabalho possível para que você tenha segurança, agilidade e tranquilidade na hora de solicitar o seu benefício."
   },
   { title: 'Antecipação do FGTS', icon: PiggyBank },
-  { title: 'Proteção veicular' },
-  { title: 'Consórcio' },
+  { title: 'Proteção veicular', icon: Car },
+  { title: 'Consórcio', icon: Landmark },
 ];
 
 function useOnScreen(ref: React.RefObject<HTMLElement>) {
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
     <section id="trabalhos" className="py-24 sm:py-32 text-foreground overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Nossos serviços
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg leading-8 text-foreground/80">

@@ -37,8 +37,8 @@ export default function Header() {
               <Image
                 src="https://i.postimg.cc/HntJTX7F/Micaele-Prudencio-CREDITO-FINANCIAMENTO.png"
                 alt="CrediSoluções Logo"
-                width={200}
-                height={200}
+                width={250}
+                height={136}
                 priority
                 className="object-contain h-48 w-auto"
               />

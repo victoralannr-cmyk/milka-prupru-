@@ -78,7 +78,7 @@ export default function PortfolioSection() {
             >
               <CardContent className="flex h-full items-center justify-center p-6 gap-2">
                 <span className="text-lg font-semibold text-center">{item.title}</span>
-                {item.icon && <item.icon className="h-5 w-5" />}
+                {item.icon && <item.icon className="h-10 w-10" />}
               </CardContent>
             </Card>
           ))}

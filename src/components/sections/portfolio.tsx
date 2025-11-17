@@ -4,9 +4,32 @@ import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
+const Wheelchair = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="12" cy="4" r="1" />
+    <path d="M12 18a4 4 0 0 0-4-4h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2" />
+    <path d="M12 14v4" />
+    <path d="M19 14h.5a2.5 2.5 0 0 1 0 5H19" />
+    <path d="M16 19h-2.5" />
+    <path d="M14 8v2a2 2 0 0 1-2 2h-2" />
+  </svg>
+);
+
+
 const portfolioItems = [
   { title: 'Crédito Consignado para aposentados e Pensionista' },
-  { title: 'BPC / LOAS' },
+  { title: 'BPC / LOAS', icon: Wheelchair },
   { title: 'Antecipação do FGTS' },
 ];
 
@@ -65,6 +88,7 @@ export default function PortfolioSection() {
             >
               <CardContent className="flex h-full items-center justify-center p-6 gap-2">
                 <span className="text-lg font-semibold text-center">{item.title}</span>
+                {item.icon && <item.icon className="h-5 w-5" />}
               </CardContent>
             </Card>
           ))}

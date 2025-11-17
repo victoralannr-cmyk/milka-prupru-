@@ -106,7 +106,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     animation: pan-bg 20s linear infinite;
-    background-attachment: scroll;
+    background-attachment: scroll; /* Changed from fixed for mobile compatibility */
 }
 
 @media (min-width: 768px) {
@@ -117,14 +117,21 @@ body {
 
 .main-bg::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
+
+@media (min-width: 768px) {
+  .main-bg::before {
+    position: fixed;
+  }
+}
+
 
 .main-bg > header,
 .main-bg > main > section, 
@@ -178,7 +185,7 @@ body {
     background-color: hsl(var(--muted)) !important;
     color: hsl(var(--foreground)) !important;
 }
-#contato label, #contato input::placeholder {
+#contato label, #contato input::placeholder, #contato textarea::placeholder {
     color: hsl(var(--foreground)) !important;
 }
 #contato input, #contato textarea {

@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 const portfolioItems = [
   { title: 'Crédito Consignado para aposentados e Pensionista' },
   { title: 'BPC / LOAS' },
-  { title: 'Trabalho 3' },
+  { title: 'Antecipação do FGTS' },
 ];
 
 function useOnScreen(ref: React.RefObject<HTMLElement>) {

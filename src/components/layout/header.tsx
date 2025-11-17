@@ -47,6 +47,12 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2 w-1/3 justify-end">
+           <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
+             <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
+               <WhatsAppIcon />
+               Vamos lá!
+             </a>
+           </Button>
            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
              <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden bg-transparent text-white hover:bg-white/10 hover:text-white">

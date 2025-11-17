@@ -43,7 +43,7 @@ export default function ServicesSection() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center flex flex-col bg-blue-600 text-white shadow-lg">
+            <Card key={index} className="text-center flex flex-col bg-blue-800 text-white shadow-lg">
               <CardHeader className="flex-grow">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/20 mb-4">
                   <service.icon className="h-6 w-6 text-white" />

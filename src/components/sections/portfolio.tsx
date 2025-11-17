@@ -66,7 +66,7 @@ export default function PortfolioSection() {
             Confira alguns dos casos de sucesso que demonstram nosso compromisso e eficácia.
           </p>
         </div>
-        <div ref={sectionRef} className="flex flex-col items-center gap-4">
+        <div ref={sectionRef} className="flex flex-col items-start gap-4">
           {portfolioItems.map((item, index) => (
             <Card
               key={index}

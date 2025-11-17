@@ -33,7 +33,7 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-primary">Sonho do Carro Novo</h3>
+                <h3 className="font-headline text-xl font-semibold text-blue-800">Sonho do Carro Novo</h3>
                 <p className="mt-2 text-muted-foreground">Facilitamos o financiamento para que você possa dirigir o carro que sempre quis.</p>
               </div>
             </CardContent>

@@ -92,9 +92,9 @@ Gostaria de ser contatado(a)!`;
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nome Completo</FormLabel>
+                    <FormLabel className="text-white">Nome Completo</FormLabel>
                     <FormControl>
-                      <Input placeholder="Seu nome" {...field} className="bg-background/20" />
+                      <Input placeholder="Seu nome" {...field} className="bg-background/20 placeholder:text-white/80 text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -105,9 +105,9 @@ Gostaria de ser contatado(a)!`;
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Celular</FormLabel>
+                    <FormLabel className="text-white">Celular</FormLabel>
                     <FormControl>
-                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} className="bg-background/20" />
+                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} className="bg-background/20 placeholder:text-white/80 text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -118,9 +118,9 @@ Gostaria de ser contatado(a)!`;
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-white">Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="seu@email.com" {...field} className="bg-background/20" />
+                      <Input type="email" placeholder="seu@email.com" {...field} className="bg-background/20 placeholder:text-white/80 text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -131,9 +131,9 @@ Gostaria de ser contatado(a)!`;
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Mensagem Adicional (Opcional)</FormLabel>
+                    <FormLabel className="text-white">Mensagem Adicional (Opcional)</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} className="bg-background/20" />
+                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} className="bg-background/20 placeholder:text-white/80 text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

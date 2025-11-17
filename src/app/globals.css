@@ -106,7 +106,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
-    animation: pan-bg 20s linear infinite;
+    animation: pan-bg 10s linear infinite;
 }
 
 .main-bg::before {
@@ -116,7 +116,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: -1;
 }
 
@@ -144,17 +144,19 @@ body {
   color: hsl(var(--primary)) !important;
 }
 
-#trabalhos, #success {
+#trabalhos, #success, #contato {
   background-color: white;
 }
 
 #trabalhos h2, #trabalhos p, #trabalhos .text-primary,
-#success h2, #success p, #success .text-primary {
+#success h2, #success p, #success .text-primary,
+#contato h2, #contato p, #contato .text-primary {
   color: hsl(var(--primary)) !important;
 }
 
 #trabalhos p, #trabalhos .text-muted-foreground,
-#success p, #success .text-muted-foreground {
+#success p, #success .text-muted-foreground,
+#contato p, #contato .text-muted-foreground {
   color: hsl(var(--muted-foreground)) !important;
 }
 
@@ -164,4 +166,12 @@ body {
 
 #trabalhos .card, #success .card {
     background-color: hsl(var(--card)) !important;
+}
+
+#contato .bg-white\/80 {
+    background-color: hsl(var(--muted)) !important;
+    color: hsl(var(--foreground)) !important;
+}
+#contato label {
+    color: hsl(var(--foreground)) !important;
 }

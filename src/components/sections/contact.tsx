@@ -94,7 +94,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Nome Completo</FormLabel>
                     <FormControl>
-                      <Input placeholder="Seu nome" {...field} className="bg-white/80 text-black" />
+                      <Input placeholder="Seu nome" {...field} className="bg-white/80" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -107,7 +107,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Celular</FormLabel>
                     <FormControl>
-                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} className="bg-white/80 text-black" />
+                      <Input placeholder="(XX) XXXXX-XXXX" {...field} onChange={(e) => handlePhoneInputChange(e, field)} className="bg-white/80" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -120,7 +120,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="seu@email.com" {...field} className="bg-white/80 text-black" />
+                      <Input type="email" placeholder="seu@email.com" {...field} className="bg-white/80" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -133,7 +133,7 @@ Gostaria de ser contatado(a)!`;
                   <FormItem>
                     <FormLabel>Mensagem Adicional (Opcional)</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} className="bg-white/80 text-black" />
+                      <Textarea placeholder="Conte-nos um pouco sobre o que você precisa..." {...field} className="bg-white/80" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

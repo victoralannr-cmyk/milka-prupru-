@@ -35,7 +35,7 @@ export default function Header() {
         <div className="w-1/3 flex justify-center items-center h-full">
             <Link href="#home">
               <Image
-                src="https://i.postimg.cc/kMsvyb2X/Gemini-Generated-Image-cx3axacx3axacx3a-removebg-preview.png"
+                src="https://i.postimg.cc/HntJTX7F/Micaele-Prudencio-CREDITO-FINANCIAMENTO.png"
                 alt="CrediSoluções Logo"
                 width={200}
                 height={200}

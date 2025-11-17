@@ -19,7 +19,7 @@ export default function HeroSection() {
           Você não é apenas um cliente. Você é especial, e seu objetivo é a nossa prioridade. Conte com um atendimento personalizado e acolhedor.
         </p>
         <div className="mt-10">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all duration-300 transform hover:scale-105">
+          <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all duration-300 transform hover:scale-105">
             <a href="https://wa.me/5588994532323" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
               Clique aqui

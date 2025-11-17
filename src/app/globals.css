@@ -129,7 +129,6 @@ body {
 
 .main-bg h1, .main-bg h2, .main-bg h3, .main-bg p, .main-bg span, .main-bg label,
 .main-bg .text-foreground, .main-bg .text-foreground\/80, .main-bg .text-muted-foreground {
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
     color: white !important;
 }
 
@@ -152,18 +151,15 @@ body {
 #trabalhos h2, #trabalhos p, #trabalhos .text-primary,
 #success h2, #success p, #success .text-primary {
   color: hsl(var(--primary)) !important;
-  text-shadow: none !important;
 }
 
 #trabalhos p, #trabalhos .text-muted-foreground,
 #success p, #success .text-muted-foreground {
   color: hsl(var(--muted-foreground)) !important;
-  text-shadow: none !important;
 }
 
 #trabalhos .text-secondary-foreground {
     color: hsl(var(--secondary-foreground)) !important;
-    text-shadow: none !important;
 }
 
 #trabalhos .card, #success .card {

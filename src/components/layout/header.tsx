@@ -41,7 +41,6 @@ export default function Header() {
                 height={200}
                 priority
                 className="object-contain h-48 w-auto"
-                style={{ filter: 'drop-shadow(0 0 8px rgba(0, 0, 0, 0.9))' }}
               />
             </Link>
         </div>

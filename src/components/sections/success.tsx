@@ -53,7 +53,7 @@ export default function SuccessSection() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="font-headline text-xl font-semibold text-primary">Crédito com Confiança</h3>
+                <h3 className="font-headline text-xl font-semibold text-blue-800">Crédito com Confiança</h3>
                 <p className="mt-2 text-muted-foreground">Construímos uma relação de confiança para oferecer o empréstimo que você precisa.</p>
               </div>
             </CardContent>

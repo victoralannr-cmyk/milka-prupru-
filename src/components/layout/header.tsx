@@ -26,7 +26,7 @@ export default function Header() {
       <div className="container flex h-full items-center justify-between">
         <nav className="hidden md:flex items-center gap-6 w-1/3">
           {navItems.map((item) => (
-            <Link key={item.label} href={item.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+            <Link key={item.label} href={item.href} className="text-sm font-medium text-white transition-colors hover:text-white/80">
               {item.label}
             </Link>
           ))}

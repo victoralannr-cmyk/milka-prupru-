@@ -43,15 +43,15 @@ export default function ServicesSection() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center flex flex-col bg-background/80 backdrop-blur-sm shadow-none">
+            <Card key={index} className="text-center flex flex-col bg-primary text-primary-foreground shadow-lg">
               <CardHeader className="flex-grow">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mb-4">
-                  <service.icon className="h-6 w-6 text-primary" />
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary-foreground/20 mb-4">
+                  <service.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <CardTitle className="font-headline">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-primary-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
+                <p className="text-primary-foreground/80">{service.description}</p>
               </CardContent>
             </Card>
           ))}

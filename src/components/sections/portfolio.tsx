@@ -77,9 +77,9 @@ export default function PortfolioSection() {
               )}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <CardContent className="flex h-full items-center justify-center p-6 gap-2">
-                <span className="text-lg font-semibold text-center">{item.title}</span>
+              <CardContent className={cn("flex h-full items-center justify-center p-6 gap-2", item.icon && "flex-col")}>
                 {item.icon && <item.icon className="h-10 w-10" />}
+                <span className="text-lg font-semibold text-center">{item.title}</span>
               </CardContent>
             </Card>
           ))}

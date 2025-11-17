@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 const portfolioItems = [
-  { title: 'Trabalho 1' },
+  { title: 'Crédito Consignado para aposentados e Pensionista' },
   { title: 'Trabalho 2' },
   { title: 'Trabalho 3' },
 ];

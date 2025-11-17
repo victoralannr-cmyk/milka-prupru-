@@ -14,8 +14,8 @@ body {
     --card-foreground: 240 5% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 5% 11%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 240 5% 11%;
+    --primary: 225 73% 57%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 40 90% 55%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
@@ -26,7 +26,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 0 0% 100%;
+    --ring: 225 73% 57%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -49,8 +49,8 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 240 5% 11%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 240 5% 11%;
+    --primary: 225 73% 57%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 40 90% 55%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
@@ -61,7 +61,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 0 0% 100%;
+    --ring: 225 73% 57%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -103,10 +103,16 @@ body {
     background-image: url('https://i.postimg.cc/G3XTpTmh/Gemini-Generated-Image-tagfcctagfcctagf.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
     animation: pan-bg 20s linear infinite;
+    background-attachment: scroll;
+}
+
+@media (min-width: 768px) {
+  .main-bg {
+    background-attachment: fixed;
+  }
 }
 
 .main-bg::before {
@@ -151,7 +157,7 @@ body {
 #trabalhos h2, #trabalhos p, #trabalhos .text-primary,
 #success h2, #success p, #success .text-primary,
 #footer-contato h3, #footer-contato p, #footer-contato .text-primary {
-  color: hsl(var(--primary)) !important;
+  color: hsl(var(--foreground)) !important;
 }
 
 #trabalhos p, #trabalhos .text-muted-foreground,
@@ -172,8 +178,12 @@ body {
     background-color: hsl(var(--muted)) !important;
     color: hsl(var(--foreground)) !important;
 }
-#contato label {
+#contato label, #contato input::placeholder {
     color: hsl(var(--foreground)) !important;
+}
+#contato input, #contato textarea {
+    color: hsl(var(--foreground)) !important;
+    background-color: hsl(var(--background)) !important;
 }
 
 #footer-contato, #footer-contato a {

@@ -31,7 +31,11 @@ const portfolioItems = [
     icon: Car,
     description: "Proteção veicular é um serviço que garante cobertura contra roubo, furto, colisões, incêndio, danos a terceiros e outros imprevistos, oferecendo segurança e tranquilidade para o seu veículo com um custo mais acessível que seguros tradicionais. É a forma ideal de dirigir protegido e evitar prejuízos inesperados.\n\nNós oferecemos um atendimento completo e dedicado, garantindo o melhor trabalho possível para que você contrate sua proteção com segurança, transparência e total confiança."
   },
-  { title: 'Consórcio', icon: Landmark },
+  { 
+    title: 'Consórcio', 
+    icon: Landmark,
+    description: "Consórcio é uma forma inteligente e sem juros de adquirir carro, moto, imóvel ou serviços. Você participa de um grupo que contribui mensalmente e pode ser contemplado por sorteio ou lance, recebendo a carta de crédito para realizar sua compra de forma planejada e segura.\n\nAqui, você conta com orientação clara e personalizada, garantindo que cada etapa seja feita com confiança e que você aproveite ao máximo todas as vantagens do consórcio."
+  },
 ];
 
 function useOnScreen(ref: React.RefObject<HTMLElement>) {

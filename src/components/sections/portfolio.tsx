@@ -5,27 +5,17 @@ import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 const Wheelchair = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    height="24px" 
+    viewBox="0 -960 960 960" 
+    width="24px" 
+    fill="currentColor"
     {...props}
   >
-    <circle cx="12" cy="4" r="1" />
-    <path d="M12 18a4 4 0 0 0-4-4h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2" />
-    <path d="M12 14v4" />
-    <path d="M19 14h.5a2.5 2.5 0 0 1 0 5H19" />
-    <path d="M16 19h-2.5" />
-    <path d="M14 8v2a2 2 0 0 1-2 2h-2" />
+    <path d="M482.08-734q-30.08 0-51.58-21.42t-21.5-51.5q0-30.08 21.42-51.58t51.5-21.5q30.08 0 51.58 21.42t21.5 51.5q0 30.08-21.42 51.58t-51.5 21.5ZM696-80v-209H482q-29.7 0-50.85-21.15Q410-331.3 410-361v-247q0-29.7 21-50.85Q452-680 482.49-680q22.17 0 38.34 9T559-636q42 49 92 82t109 35v60q-51 0-105-25t-104-67v183h133q29.7 0 50.85 21.15Q756-325.7 756-296v216h-60Zm-300 0q-83 0-139.5-56.5T200-276q0-68 49.5-125.5T380-468v61q-54 5-86.5 44.5T261-276q0 58 38.5 97t96.5 39q47 0 87-32.5t44-86.5h61q-8 80-66 129.5T396-80Z"></path>
   </svg>
 );
-
 
 const portfolioItems = [
   { title: 'Crédito Consignado para aposentados e Pensionista' },

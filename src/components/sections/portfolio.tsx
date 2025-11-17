@@ -26,7 +26,11 @@ const portfolioItems = [
     icon: PiggyBank,
     description: "Antecipação do FGTS é uma opção que permite adiantar parte do saldo do seu FGTS, transformando esse valor em dinheiro imediato de forma segura e com taxas mais baixas. É ideal para quem precisa resolver imprevistos, quitar dívidas ou investir em algo importante sem burocracia.\n\nNós realizamos todo o processo com máxima eficiência e cuidado, garantindo o melhor trabalho possível para que você receba seu valor com segurança, rapidez e total transparência."
   },
-  { title: 'Proteção veicular', icon: Car },
+  { 
+    title: 'Proteção veicular', 
+    icon: Car,
+    description: "Proteção veicular é um serviço que garante cobertura contra roubo, furto, colisões, incêndio, danos a terceiros e outros imprevistos, oferecendo segurança e tranquilidade para o seu veículo com um custo mais acessível que seguros tradicionais. É a forma ideal de dirigir protegido e evitar prejuízos inesperados.\n\nNós oferecemos um atendimento completo e dedicado, garantindo o melhor trabalho possível para que você contrate sua proteção com segurança, transparência e total confiança."
+  },
   { title: 'Consórcio', icon: Landmark },
 ];
 

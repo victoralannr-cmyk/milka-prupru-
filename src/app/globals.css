@@ -144,20 +144,18 @@ body {
   color: hsl(var(--primary)) !important;
 }
 
-#trabalhos, #success, #contato, #footer-contato {
+#trabalhos, #success, #footer-contato {
   background-color: white;
 }
 
 #trabalhos h2, #trabalhos p, #trabalhos .text-primary,
 #success h2, #success p, #success .text-primary,
-#contato h2, #contato p, #contato .text-primary,
 #footer-contato h3, #footer-contato p, #footer-contato .text-primary {
   color: hsl(var(--primary)) !important;
 }
 
 #trabalhos p, #trabalhos .text-muted-foreground,
 #success p, #success .text-muted-foreground,
-#contato p, #contato .text-muted-foreground,
 #footer-contato .text-muted-foreground, #footer-contato .text-white\/80 {
   color: hsl(var(--muted-foreground)) !important;
 }

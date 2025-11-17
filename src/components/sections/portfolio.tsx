@@ -22,6 +22,8 @@ const portfolioItems = [
   { title: 'Crédito Consignado para aposentados e Pensionista' },
   { title: 'BPC / LOAS', icon: Wheelchair },
   { title: 'Antecipação do FGTS' },
+  { title: 'Proteção veicular' },
+  { title: 'Consórcio' },
 ];
 
 function useOnScreen(ref: React.RefObject<HTMLElement>) {

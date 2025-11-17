@@ -66,47 +66,47 @@ export default function PortfolioSection() {
           </p>
         </div>
         <div ref={sectionRef} className="flex flex-col items-center sm:items-start gap-4">
-          <Accordion type="single" collapsible className="w-full max-w-md mx-auto sm:mx-0">
-            {portfolioItems.map((item, index) => (
-              <div
-                key={index}
-                className={cn(
-                  'transform transition-all duration-1000 ease-out',
-                  isVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-full -rotate-12'
-                )}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                {item.description ? (
-                  <AccordionItem value={`item-${index}`} className="border-none">
-                    <Card className="bg-accent text-accent-foreground w-full">
-                      <AccordionTrigger className="w-full p-0">
-                        <CardContent className="flex h-full w-full items-center justify-center p-6 gap-2 flex-col">
+          <div className="w-full max-w-md mx-auto sm:mx-0">
+            {portfolioItems.map((item, index) => {
+              const animationStyle = {
+                transitionDelay: `${index * 200}ms`,
+              };
+
+              const animationClasses = cn(
+                'transform transition-all duration-1000 ease-out',
+                isVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-full -rotate-12'
+              );
+
+              if (item.description) {
+                return (
+                  <div key={index} style={animationStyle} className={animationClasses}>
+                    <Card className="bg-accent text-accent-foreground w-full mb-2">
+                       <CardContent className="flex h-full w-full items-center justify-center p-6 gap-2 flex-col">
                           {item.icon && <item.icon className="h-24 w-24" />}
                           <span className="text-lg font-semibold text-center">{item.title}</span>
-                        </CardContent>
-                      </AccordionTrigger>
+                       </CardContent>
                     </Card>
-                    <AccordionContent>
-                      <Card className="bg-white text-foreground mt-2">
-                        <CardContent className="p-6">
-                          <p className="whitespace-pre-line text-sm">{item.description}</p>
-                        </CardContent>
-                      </Card>
-                    </AccordionContent>
-                  </AccordionItem>
-                ) : (
-                  <Card
-                    className="bg-accent text-accent-foreground w-full"
-                  >
-                    <CardContent className={cn("flex h-full items-center justify-center p-6 gap-2", item.icon && "flex-col")}>
-                      {item.icon && <item.icon className="h-24 w-24" />}
-                      <span className="text-lg font-semibold text-center">{item.title}</span>
-                    </CardContent>
-                  </Card>
-                )}
-              </div>
-            ))}
-          </Accordion>
+                    <Card className="bg-white text-foreground">
+                      <CardContent className="p-6">
+                        <p className="whitespace-pre-line text-sm">{item.description}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                );
+              }
+
+              return (
+                 <div key={index} style={animationStyle} className={cn(animationClasses, 'mb-2')}>
+                    <Card className="bg-accent text-accent-foreground w-full">
+                       <CardContent className={cn("flex h-full items-center justify-center p-6 gap-2", item.icon && "flex-col")}>
+                          {item.icon && <item.icon className="h-24 w-24" />}
+                          <span className="text-lg font-semibold text-center">{item.title}</span>
+                       </CardContent>
+                    </Card>
+                 </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

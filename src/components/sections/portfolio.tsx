@@ -8,8 +8,6 @@ const portfolioItems = [
   { title: 'Trabalho 1' },
   { title: 'Trabalho 2' },
   { title: 'Trabalho 3' },
-  { title: 'Trabalho 4' },
-  { title: 'Trabalho 5' },
 ];
 
 function useOnScreen(ref: React.RefObject<HTMLElement>) {

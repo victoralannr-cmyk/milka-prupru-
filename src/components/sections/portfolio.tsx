@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 const portfolioItems = [
   { title: 'Crédito Consignado para aposentados e Pensionista' },
-  { title: 'Trabalho 2' },
+  { title: 'BPC / LOAS' },
   { title: 'Trabalho 3' },
 ];
 
@@ -64,7 +64,7 @@ export default function PortfolioSection() {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <CardContent className="flex h-full items-center justify-center p-6">
-                <span className="text-lg font-semibold">{item.title}</span>
+                <span className="text-lg font-semibold text-center">{item.title}</span>
               </CardContent>
             </Card>
           ))}

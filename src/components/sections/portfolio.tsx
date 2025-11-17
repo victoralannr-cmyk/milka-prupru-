@@ -21,7 +21,11 @@ const portfolioItems = [
     icon: Wheelchair,
     description: "BPC/LOAS é um benefício do governo que garante um salário mínimo mensal para idosos acima de 65 anos ou pessoas com deficiência que vivem em situação de vulnerabilidade e não têm condições de se manter. Não exige contribuição ao INSS e é fundamental para garantir dignidade a quem mais precisa.\n\nNós cuidamos de todo o processo com excelência, garantindo o melhor trabalho possível para que você tenha segurança, agilidade e tranquilidade na hora de solicitar o seu benefício."
   },
-  { title: 'Antecipação do FGTS', icon: PiggyBank },
+  { 
+    title: 'Antecipação do FGTS', 
+    icon: PiggyBank,
+    description: "Antecipação do FGTS é uma opção que permite adiantar parte do saldo do seu FGTS, transformando esse valor em dinheiro imediato de forma segura e com taxas mais baixas. É ideal para quem precisa resolver imprevistos, quitar dívidas ou investir em algo importante sem burocracia.\n\nNós realizamos todo o processo com máxima eficiência e cuidado, garantindo o melhor trabalho possível para que você receba seu valor com segurança, rapidez e total transparência."
+  },
   { title: 'Proteção veicular', icon: Car },
   { title: 'Consórcio', icon: Landmark },
 ];
